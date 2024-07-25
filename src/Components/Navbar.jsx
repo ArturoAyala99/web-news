@@ -14,37 +14,24 @@ export default function Navbar({news, api_fetch}){
     return(
         <>
             <Router>
-
-                <nav className='navbar navbar-expand-lg fixed-top bg-dark bg-gradient'>
-                
-                    <div className='container-fluid'>
-                        
+                <nav className="navbar navbar-expand-lg navbar-light bg-light">
+                    <div className="container-fluid">
                         <Link to="/" className='navbar-brand'>
                             <h3>Web News</h3>
                         </Link>
 
-                        <button className="navbar-toggler bg-success" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>
 
-                        
-
-
-
                         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-                            <ul className="navbar-nav ms-auto">
-                                <li className="nav-item">
-                                    <a className="nav-link active" aria-current="page" href="#">Inicio</a>
-                                </li>
-                            </ul>
                             <div className="navbar-nav">
-                                <Link to="/deportes" className="nav-link active text-white"><h6>Deportes</h6></Link>
-                                <Link to="/salud" className="nav-link text-white"><h6>Salud</h6></Link>
-                                <Link to="/negocios" className="nav-link text-white"><h6>Negocios</h6></Link>
-                                <Link to="/entretenimiento" className="nav-link text-white"><h6>Entretenimiento</h6></Link>
-                                <Link to="/internacional" className="nav-link text-white"><h6>Internacional</h6></Link>
-                                <Link to="/tecnologia" className="nav-link text-white"><h6>Tecnología</h6></Link>
-                                <Link to="/ciencia" className="nav-link text-white"><h6>Ciencia</h6></Link>
+                                <Link to="/salud" className="nav-link"><h6>Salud</h6></Link>
+                                <Link to="/negocios" className="nav-link"><h6>Negocios</h6></Link>
+                                <Link to="/entretenimiento" className="nav-link"><h6>Entretenimiento</h6></Link>
+                                <Link to="/internacional" className="nav-link"><h6>Internacional</h6></Link>
+                                <Link to="/tecnologia" className="nav-link"><h6>Tecnología</h6></Link>
+                                <Link to="/ciencia" className="nav-link"><h6>Ciencia</h6></Link>
                             </div>
                         </div>
                     </div>
@@ -100,7 +87,9 @@ export default function Navbar({news, api_fetch}){
                         />}
                     />
                 </Routes>
+
             </Router>
+
         </>
     )
 }
